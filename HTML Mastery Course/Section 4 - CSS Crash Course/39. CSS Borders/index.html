@@ -6,41 +6,42 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>CSS Borders</title>
    <style>
-   h1 {
-      border-style: solid;
-      border-color: blue;
-      border-width: 5px;
-   }
-   h2 {
-      text-align: center;
-      border: 5px solid green;
-      border-radius: 10px;
-      background-color: cornsilk;
-      padding: 8px;
-      margin: 25px;
-      color: darkred;
-      box-shadow: 0 3px 6px darkgrey;
-      transition: .5s;
-   }
-   h2:hover {
-      cursor: pointer;
-      opacity: .7;
-   }
+	 h1{
+		 border-style: solid;
+		 border-color: blue;
+		 border-width: 5px;
+	 }
+	 h2{
+		 text-align: center;
+		 border: 5px solid green;
+		 border-radius: 10px;
+		 background-color: cornsilk;
+		 padding: 8px;
+		 margin: 20px;
+		 color: darkred;
+		 box-shadow: 0 5px 3px darkgray;
+	 }
+	 h2:hover{
+		 cursor: pointer;
+		 opacity: .7;
+		 transition: .5s;
+	 }
    </style>
 </head>
 <body>
 
    <h1>Solid border.</h1>
    <h2>border-style: solid;</h2>
+	 <p style="border-style: dotted;">dotted border.</p>
+	 <p style="border-style: dashed;">dashed border.</p>
+	 <p style="border-style: double;">double border.</p>
+	 <p style="border-style: outset;">outset border.</p>
+	 <p style="border-style: dotted dashed double solid; border-color: darkcyan;">mixed border.</p>
+	 
+	 <p style="border-style: inset; border-width: 5px;">inset border.</p>
+	 <p style="border-style: groove;border-width: 5px;">groove border.</p>
+	 <p style="border-style: ridge; border-width: 5px;">ridge border.</p>
 
-   <p style="border-style: dotted; border-width: 4px;">dotted border.</p>
-   <p style="border-style: dashed; border-width: 4px;">dashed border.</p>
-   <p style="border-style: double; border-width: 4px;">double border.</p>
-   <p style="border-style: outset; border-width: 4px;">outset border.</p>
-   <p style="border-style: inset; border-width: 4px;">inset border.</p>
-   <p style="border-style: groove; border-width: 4px;">groove border.</p>
-   <p style="border-style: ridge; border-width: 4px;">ridge border.</p>
-   <p style="border-style: dotted double dashed solid; border-color: darkcyan; border-width: 4px;">mixed border.</p>
-
+	 
 </body>
 </html>

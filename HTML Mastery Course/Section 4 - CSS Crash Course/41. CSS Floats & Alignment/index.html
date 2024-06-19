@@ -6,12 +6,31 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>CSS Floats & Alignment</title>
    <style>
-
+      p{
+         border: 2px solid green;
+      }
+      img{
+         float: right;
+         padding: 0 0 0 10px;
+      }
+      .clearfix{
+         clear: both;
+         overflow: auto;
+         text-align: justify;
+      }
    </style>
 </head>
 <body>
 
-   <p><img src="example.jpg" alt="" width="200px"></p>
+   <p><img src="example.jpg" alt="" width="200px">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quam a tempora ipsam recusandae sapiente, reprehenderit aspernatur itaque? Laboriosam recusandae est magni voluptas perferendis dolorem fugiat, quod quibusdam alias! Velit facere numquam vitae illum ex inventore molestias cumque consequuntur ut, eveniet impedit eum dolores corrupti. Expedita, est? Libero, voluptates voluptatibus?</p>
+
+   <div class="clearfix"></div>
+   <h2>With clearfix.</h2>
+
+   <p class="clearfix"><img src="example.jpg" alt="" width="200px">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quam a tempora ipsam recusandae sapiente, reprehenderit aspernatur itaque? Laboriosam recusandae est magni voluptas perferendis dolorem fugiat, quod quibusdam alias! Velit facere numquam vitae illum ex inventore molestias cumque consequuntur ut, eveniet impedit eum dolores corrupti. Expedita, est? Libero, voluptates voluptatibus?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quam a tempora ipsam recusandae sapiente, reprehenderit aspernatur itaque? Laboriosam recusandae est magni voluptas perferendis dolorem fugiat, quod quibusdam alias! Velit facere numquam vitae illum ex inventore molestias cumque consequuntur ut, eveniet impedit eum dolores corrupti. Expedita, est? Libero, voluptates voluptatibus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quam a tempora ipsam recusandae sapiente, reprehenderit aspernatur itaque? Laboriosam recusandae est magni voluptas perferendis dolorem fugiat, quod quibusdam alias! Velit facere numquam vitae illum ex inventore molestias cumque consequuntur ut, eveniet impedit eum dolores corrupti. Expedita, est? Libero, voluptates voluptatibus?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quam a tempora ipsam recusandae sapiente, reprehenderit aspernatur itaque? Laboriosam recusandae est magni voluptas perferendis dolorem fugiat, quod quibusdam alias! Velit facere numquam vitae illum ex inventore molestias cumque consequuntur ut, eveniet impedit eum dolores corrupti. Expedita, est? Libero, voluptates voluptatibus?
+   </p>
 
 </body>
 </html>

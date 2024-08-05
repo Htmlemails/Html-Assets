@@ -59,7 +59,30 @@
       }
 
       /*-- SIMPLE TWO COLUMNS LESSON --*/
+      .column-wrapper{
+         padding: 0;
+         font-size: 0;
+         background-color: #b7c0ba;
+         text-align: center;
+      }
 
+      .column{
+         border-spacing: 0;
+         vertical-align: top;
+         width: 100%;
+         display: inline-block;
+         background-color: #546c94;
+         color: #fff;
+      }
+
+      .column-one-half{
+         max-width: 300px;
+      }
+
+      .padding{
+         padding: 20px;
+         background-color: #346565;
+      }
       /*-- END SIMPLE TWO COLUMNS LESSON --*/
 
       /*-- THIRDS SECTION --*/
@@ -67,7 +90,13 @@
       /*-- END THIRDS SECTION --*/
 
       @media screen and (max-width: 599.98px) {
+         .column-wrapper{
+            padding: 15px 0 !important;
+         }
 
+         .padding{
+            padding: 5px 20px 0 !important;
+         }
       }
       @media screen and (max-width: 399.98px) {
 
@@ -176,7 +205,32 @@
                            <p style="text-align: center; font-size: 22px; margin: 0;">Two Columns Reverse Direction, Vertical Align Middle</p>
                         </td>
                      </tr>
+<!-- Exercise start -->
+                     <tr>
+                        <td class="column-wrapper" style="padding:0; font-size:0; background-color:#b7c0ba; text-align:center;" dir="rtl">
+                           
+                           <table class="column column-one-half" width="100%" style="border-spacing:0; vertical-align:middle; max-width:300px; display:inline-block; background-color:#546c94; color:#fff;" role="presentation">
+                              <tr>
+                                 <td style="padding:20px; background-color:#346565;"> 
+                                    <a href="https://example.com">
+                                       <img src="https://i.ibb.co/C0ckzW1/boat.jpg" width="260" alt="boat">
+                                    </a> 
+                                 </td>
+                              </tr>
+                           </table>
 
+                           <table class="column column-one-half" width="100%" style="border-spacing:0; vertical-align:middle; width:100%; max-width:300px; display:inline-block; background-color:#546c94; color:#fff;" role="presentation" dir="ltr">
+                              <tr>
+                                 <td class="padding" style="padding:20px; background-color:#346565;">
+                                    <p style="font-size:16px;">Responsive HTML Email Templates that you can build 
+                                       around to master email development.</p>
+                                 </td>
+                              </tr>
+                           </table>
+
+                        </td>
+                     </tr>
+<!-- Exercise end -->
                   </table>
                </td>
             </tr>
@@ -193,7 +247,9 @@
                            <p style="text-align: center; font-size: 22px; margin: 0;">Two Columns Fluid/Hybrid 100% Responsive Width</p>
                         </td>
                      </tr>
-
+<!-- Exercise start -->
+ 
+<!-- Exercise end -->
                   </table>
                </td>
             </tr>

@@ -58,6 +58,17 @@
          text-decoration: inherit !important;
       }
 
+      a.button{
+         box-shadow: 0 8px 8px #bdbdbd !important;
+         transition: all .2s !important;
+      }
+
+      a.button:hover{
+         background-color: #666666 !important;
+         border: 1px solid #666666 !important;
+         box-shadow: 0 4px 4px #bdbdbd !important;
+      }
+
       @media screen and (max-width: 599.98px) {
 
       }
@@ -89,6 +100,18 @@
          }
          [data-ogsc] .lesson-title {
             color: #3d3d3d!important;
+         }
+         a.button{
+         box-shadow: 0 8px 8px #000000 !important;
+         }
+         [data-ogsc] a.button:hover{
+         box-shadow: 0 4px 4px #000000 !important;
+         }
+         a.button{
+         box-shadow: 0 8px 8px #000000 !important;
+         }
+         [data-ogsc] a.button:hover{
+         box-shadow: 0 4px 4px #000000 !important;
          }
       } 
 
@@ -149,6 +172,20 @@
                         </td>
                      </tr>
 
+                     <tr>
+                        <td align="center" style="padding:20px;">
+                           <table align="center" role="presentation" style="border-spacing:0;">
+                              <tr>
+                                 <td align="center" style="border-radius:10px;" bgcolor="#346564">
+                                    <a href="https:\\example.com" class="button" target="_blank" style="font-size:18px; font-weight:bold; text-decoration:none; color:#ffffff; background-color:#346564; padding:12px 24px; border:1px solid #346564; border-radius:8px; display:inline-block; letter-spacing:1px;">
+                                       MY BUTTON
+                                    </a>
+                                 </td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+
                   </table>
                </td>
             </tr>
@@ -163,6 +200,36 @@
                      <tr>
                         <td style="background-color: #f3e1dc;padding: 12px;">
                            <p class="lesson-title" style="text-align: center; font-size: 22px; margin: 0;">VML Button with Outlook Windows Border Radius</p>
+                        </td>
+                     </tr>
+
+                     <tr>
+                        <td style="background-color: #f3e1dc;padding: 12px;">
+                           <p class="lesson-title" style="text-align: center; font-size: 22px; margin: 0;">Border Radius Except Outlook Windows - No VML</p>
+                        </td>
+                     </tr>
+
+                     <tr>
+                        <td align="center" style="padding:20px;">
+                           <table align="center" role="presentation" style="border-spacing:0;">
+                              <tr>
+                                 <td align="center">
+
+                                    <!--[if mso]>
+                                       <v:roundrect
+                                          xmlns_v="urn:schemas-microsoft-com:vml"
+                                          xmlns_w="urn:schemas-microsoft-com:office:word" href="https://example.com" style="height: 34.5pt; width: 124pt; v-text-anchor: middle;" arcsize="14%" strokecolor="#346564" fillcolor="#346564">
+                                          <w:anchorlock/>
+                                          <center style="color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 600; letter-spacing: 1px;">MY BUTTON</center>
+                                       </v:roundrect>
+                                    <![endif]-->
+
+                                    <a href="https:\\example.com" class="button" target="_blank" style="font-size:18px; font-weight:bold; text-decoration:none; color:#ffffff; background-color:#346564; padding:12px 24px; border:1px solid #346564; border-radius:8px; display:inline-block; mso-hide:all;">
+                                       MY BUTTON
+                                    </a>
+                                 </td>
+                              </tr>
+                           </table>
                         </td>
                      </tr>
 
